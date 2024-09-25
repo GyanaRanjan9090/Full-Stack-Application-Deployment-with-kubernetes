@@ -18,6 +18,7 @@ Setup Instructions:-
 ---------------------
 1. Clone the Repository:-
  >git clone https://github.com/Dibyamrout/qa-test-dibyam.git
+ 
  >cd qa-test
 
 2.Build Docker Images
