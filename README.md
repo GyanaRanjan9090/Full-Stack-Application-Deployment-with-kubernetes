@@ -18,7 +18,7 @@ Setup Instructions:-
 ---------------------
 1. Clone the Repository:-
  >git clone https://github.com/Dibyamrout/qa-test-dibyam.git
- 
+
  >cd qa-test
 
 2.Build Docker Images
@@ -44,9 +44,11 @@ Check if the services are running successfully:-
 
 6.Testing the Application:-
  Manual Testing:-
+
   1.Minikube Users: Use the following command to open the frontend service:-
    >minikube service frontend-service
   (This will open the frontend service in your browser.)
+
   2.Kind Users: Use kubectl port-forward to access the frontend:-
    >kubectl port-forward svc/frontend-service 8081:80
    >Then visit http://localhost:8081 in your browser.
@@ -61,15 +63,21 @@ Check if the services are running successfully:-
 7.Automated Testing:-
  You can use the provided Bash script to automate the verification of the frontend-backend integration:-
  1.create the shell file  (abc.sh).
+
  2.write the sheel for  verify the integration between the frontend and backend services.
+
  3.Give the Execute permisson to the sheel file (chmod +x abc.sh ).
+
  4. Run the sheel (./abc.sh)
+
  5.The script will compare the actual response from the frontend with the expected message.
 
 Expected Output
+
 1)If the test passes:
 You will see the following message:-
 Test Passed: Frontend correctly displays the greeting message.
+
 2)If the test fails:
 You will see:-
 Test Failed: Frontend did not display the expected message.
@@ -80,10 +88,10 @@ Response: <actual response from the frontend>
 ----------------------------------------------------------------------------------------
 Troubleshooting
 1.If the frontend is not accessible, verify that the services are running by checking the pods:
-1.kubectl get pods
+ >kubectl get pods
 
 2.Check logs of the services for any errors:
-kubectl logs <pod-name>
+>kubectl logs <pod-name>
 
 3.f the frontend does not display the expected message, check if the backend is returning the correct response by accessing the backend service directly:
 curl <backend-service-url>
