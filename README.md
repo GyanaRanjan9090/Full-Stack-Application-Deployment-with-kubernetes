@@ -5,9 +5,13 @@ This project demonstrates the deployment of a full-stack application consisting 
 Prerequisites:-
 ---------------
 1.Docker
+
 2.Minikube or Kind (for Kubernetes)
+
 3.kubectl (Kubernetes CLI)
+
 4.curl (for basic testing)
+
 5.Bash (for running the automated test script)
 
 Setup Instructions:-
@@ -94,8 +98,3 @@ Important Notes:-
 . Make sure to replace <your-docker-username> with your actual Docker Hub username.
 . The backend service URL for manual testing should be replaced with the actual URL that the backend service is exposing.
 . Let me know if you'd like any adjustments to the README!
-
-
-
-
-
