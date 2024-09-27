@@ -17,7 +17,7 @@ Prerequisites:-
 Setup Instructions:-
 ---------------------
 1. Clone the Repository:-
- >git clone https://github.com/Dibyamrout/qa-test-dibyam.git
+ >git clone https://github.com/GyanaRanjan9090/Full-Stack-Application-Deployment-with-kubernetes.git
 
  >cd qa-test
 
